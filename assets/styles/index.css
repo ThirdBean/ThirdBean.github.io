@@ -14,24 +14,24 @@ h1, h2, h3, h4, h5 {
     font-weight: 100;
 }
 h1 {
-    font-size: 53px;
+    font-size: 3.8vw;
     font-weight: bold !important;
 }
 h2 {
-    font-size: 45px;
+    font-size: 3.2vwpx;
 }
 h3 {
-    font-size: 35px;
+    font-size: 2vw;
 }
 h4 {
-    font-size: 28px;
+    font-size: 1.5vw;
 }
 h5 {
-    font-size: 20px;
+    font-size: 1.1vw;
     font-weight: bold !important;
 }
 button, a {
-    font-size: 25px;
+    font-size: 1.8vw;
     text-decoration: none;
 
     background-color: #00000000;
@@ -167,7 +167,7 @@ box-shadow: 1.8px 3.5px 3.5px hsl(0deg 0% 0% / 0.45);
 }
 
 .logoImg {
-    width: 10vw;
+    width: 180px;
 }
 
 .centered {
@@ -175,4 +175,32 @@ box-shadow: 1.8px 3.5px 3.5px hsl(0deg 0% 0% / 0.45);
 }
 .end {
     text-align: end !important;
+}
+
+@media (max-width: 1050px) or (orientation: portrait) {
+    .navbar, .secImg, .thirdImg, img.header {
+        display: none;
+    }
+    .media {
+        display: block;
+    }
+    .txt {
+        width: 80vw;
+    }
+    .hero {
+        width: 50vw;
+    }
+    #content {
+        padding: 20px;
+        flex-direction: column;
+    }
+    .end {
+        text-align: center !important;
+    }
+    button, a { font-size: 25px; }
+    h1 { font-size: 30px; }
+    h2 { font-size: 40px; }
+    h3 { font-size: 35px; }
+    h4 { font-size: 28px; }
+    h5 { font-size: 20px; }
 }
