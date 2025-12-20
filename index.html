@@ -22,7 +22,6 @@
 <body>
     <div class="container" id="header">
         <img class="logoImg" src="images/logowithtxt.png" alt="Third Bean" />
-
         <div class="navbar">
             <a href="">Home</a>
             <a href="">Our Story</a>
@@ -30,9 +29,16 @@
             <a href="">FAQ</a>
             <a href="">Services and Events</a>
             <a href="">Contact</a>
-       </div>
-
-       <button>Book Your Event</button>
+            <button>Book Your Event</button>
+        </div>
+        <button class="menuToggle" aria-label="Toggle menu">
+            <svg class="hamburger" width="34" height="30" viewBox="0 0 34 30" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <line class="line top" x1="2" y1="2" x2="32" y2="2" stroke="#101818" stroke-width="3"/>
+                <line class="line middle" y1="15" x2="34" y2="15" stroke="#101818" stroke-width="3"/>
+                <line class="line bottom" x1="2" y1="28" x2="32" y2="28" stroke="#101818" stroke-width="3"/>
+            </svg>
+        </button>
     </div>
     
     <div class="media">
@@ -114,6 +120,17 @@
             </div>
         </div>
     </div>
+    <script>
+        const toggle = document.querySelector('.menuToggle');
+        const nav = document.querySelector('.navbar');
+
+        toggle.addEventListener('click', () => {
+            nav.classList.toggle('open');
+            toggle.classList.toggle('active');
+        });
+        
+    </script>
+
 </body>
 
 </html>

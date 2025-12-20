@@ -190,6 +190,9 @@ box-shadow: 1.8px 3.5px 3.5px hsl(0deg 0% 0% / 0.45);
 }
 
 .centered {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
     text-align: center !important;
 }
 .end {
@@ -197,6 +200,20 @@ box-shadow: 1.8px 3.5px 3.5px hsl(0deg 0% 0% / 0.45);
 }
 #italic {
     font-style: italic;
+}
+
+.menuToggle { 
+    display: none;
+    border-radius: 50px;
+    padding: 0 !important;
+    margin: 0;
+    height: 100px !important;
+
+    background-color: #00000000;
+    box-shadow: none;
+} .menuToggle:hover {
+    background-color: #00000000;
+    box-shadow: none;
 }
 
 
@@ -232,4 +249,55 @@ box-shadow: 1.8px 3.5px 3.5px hsl(0deg 0% 0% / 0.45);
     h3 { font-size: 35px; }
     h4 { font-size: 20px; }
     h5, .footer.btn { font-size: 11px; }
+
+    .menuToggle {
+        display: block;
+    }
+
+    .navbar {
+        display: none;
+        position: absolute;
+        top: 20vh;
+        left: 0;
+        width: 100%;
+        background-color: #e8e3d8;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 0;
+        box-shadow: 0px 8px 12px rgba(0,0,0,0.25);
+        z-index: 999;
+    }
+
+    .navbar a {
+        font-size: 22px;
+        padding: 12px 0;
+    }
+
+    .navbar.open {
+        display: flex;
+    }
+
+}
+.hamburger {
+    cursor: pointer;
+}
+
+.hamburger .line {
+    transform-origin: center;
+    transition:
+        transform 0.3s ease,
+        opacity 0.2s ease;
+}
+
+/* When menu is open */
+.menuToggle.active .top {
+    transform: translateY(10.5px) rotate(45deg);
+}
+
+.menuToggle.active .middle {
+    opacity: 0;
+}
+
+.menuToggle.active .bottom {
+    transform: translateY(-10.5px) rotate(-45deg);
 }
