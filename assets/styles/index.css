@@ -6,29 +6,34 @@ body {
 body, button, a {
     color: #bff1c8;
     
-    font-family: "Poiret One", sans-serif;
+  font-family: "Assistant", sans-serif;
     font-weight: 100;
 } 
-h1, h2, h3, h4, h5 {
+h1, h2, h3, h4, h6 {
     margin: 20px 0;
-    font-weight: 100;
+    font-weight: 250;
 }
 h1 {
-    font-size: 3.8vw;
+    font-size: 3vw;
     font-weight: bold !important;
 }
 h2 {
-    font-size: 3.2vwpx;
+    font-size: 3vwpx;
 }
 h3 {
     font-size: 2vw;
 }
 h4 {
-    font-size: 1.5vw;
+    font-size: 1.6vw;
 }
-h5 {
+h5, .footer.btn {
+    margin: 5px 0;
     font-size: 1.1vw;
     font-weight: bold !important;
+}
+h6 {
+    font-size: 1.1vw;
+    font-weight: normal !important;
 }
 button, a {
     font-size: 1.8vw;
@@ -122,9 +127,10 @@ button, a {
 
     flex-direction: row;
     align-items: start;
-} #content > * {
+} #content > *, #footer > * {
     flex: 1;
     padding: 5px;
+    align-items: start;
 }
 .container.inverse#content {
     color: #5f8065;
@@ -166,6 +172,19 @@ box-shadow: 1.8px 3.5px 3.5px hsl(0deg 0% 0% / 0.45);
 
 }
 
+.footer.btn {
+    background-color: #00000000;
+    color: #152a18;
+    padding: 0;
+    margin: 5px 0;
+    text-align: left;
+    box-shadow: none;
+} .footer.btn:hover { color: #45674a; }
+.column {
+    display: flex;
+    flex-direction: column;
+}
+
 .logoImg {
     width: 180px;
 }
@@ -176,12 +195,16 @@ box-shadow: 1.8px 3.5px 3.5px hsl(0deg 0% 0% / 0.45);
 .end {
     text-align: end !important;
 }
+#italic {
+    font-style: italic;
+}
+
 
 @media (max-width: 1050px) or (orientation: portrait) {
-    .navbar, .secImg, .thirdImg, img.header {
+    .navbar, .secImg, .thirdImg, img.header, h6.footer, .footer.desktop {
         display: none;
     }
-    .media {
+    .media{
         display: block;
     }
     .txt {
@@ -194,6 +217,12 @@ box-shadow: 1.8px 3.5px 3.5px hsl(0deg 0% 0% / 0.45);
         padding: 20px;
         flex-direction: column;
     }
+    #footer {
+        padding: 0px 15px;
+    }
+    #footer .footer {
+        max-width: 20vw;
+    }
     .end {
         text-align: center !important;
     }
@@ -201,6 +230,6 @@ box-shadow: 1.8px 3.5px 3.5px hsl(0deg 0% 0% / 0.45);
     h1 { font-size: 30px; }
     h2 { font-size: 40px; }
     h3 { font-size: 35px; }
-    h4 { font-size: 28px; }
-    h5 { font-size: 20px; }
+    h4 { font-size: 20px; }
+    h5, .footer.btn { font-size: 11px; }
 }
