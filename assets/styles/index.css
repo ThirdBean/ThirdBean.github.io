@@ -1,7 +1,7 @@
 :root {
   /* ===== Colors ===== */
   --color-bg: #542f1a;
-  --color-bg-btn-hover: #5f8065;
+  --color-bg-btn-hover: #7e5d3b;
   --color-bg-btn: #c49a6c;
   --color-bg-light: #f5e7d3;
   --color-text: #faf6f0;
@@ -237,6 +237,9 @@ box-shadow: 1.8px 3.5px 3.5px hsl(0deg 0% 0% / 0.45);
 @media (max-width: 1050px) or (orientation: portrait) {
     .navbar, .secImg, .thirdImg, img.header, h6.footer, .footer.desktop {
         display: none;
+    }
+    .logoImg {
+        width: 150px;
     }
     .media{
         display: block;
