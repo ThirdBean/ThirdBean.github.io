@@ -20,6 +20,113 @@
 </head>
 
 <body>
-    Please Leave
+    <div class="container" id="header">
+        <img class="logoImg" src="images/logowithtxt.png" alt="Third Bean" />
+        <div class="navbar">
+            <a href="/index.html">Home</a>
+            <a href="/story.html">Our Story</a>
+            <a href="">Menu</a>
+            <a href="">FAQ</a>
+            <a href="">Services and Events</a>
+            <a href="">Contact</a>
+            <button>Book Your Event</button>
+        </div>
+        <button class="menuToggle" aria-label="Toggle menu">
+            <svg class="hamburger" width="34" height="30" viewBox="0 0 34 30" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <line class="line top" x1="2" y1="2" x2="32" y2="2" stroke="#101818" stroke-width="3"/>
+                <line class="line middle" y1="15" x2="34" y2="15" stroke="#101818" stroke-width="3"/>
+                <line class="line bottom" x1="2" y1="28" x2="32" y2="28" stroke="#101818" stroke-width="3"/>
+            </svg>
+        </button>
+    </div>
+    
+    <div class="media">
+    </div>
+
+    <div class="container">
+        <div></div>
+        <div class="txt">
+            <h1 class="hero">Experience the Third Bean.</h1>
+            <button>Book Now</button>
+        </div>
+        <div></div>
+    </div>
+
+    <div class="container" id="content">
+        <div>
+            <h3>Thoughtful Coffee Wherever You Are</h2>
+            <h1>Connection, Freshly Brewed</h1>
+        </div>
+        <div class="end">
+            <h4>Third Bean is a mobile coffee cart and small-batch roaster serving Dallas and the greater DFW area. We specialize in on-site coffee experiences for weddings, corporate events, and private gatherings, crafted with intention, served with care. </h4>
+            <h4>From custom menus to experienced baristas, every cup is prepared fresh and designed around your moment. We handle the details seamlessly, so you can stay present with your guests — while we serve something worth remembering.</h4>
+        </div>
+    </div>
+
+    <div class="container inverse" id="content">
+        <div>
+            <h1>Elevate Your Event</h1>
+            <h4>Whether you’re looking for a standout moment at your next corporate gathering or the finishing touch on your wedding day, Third Bean brings a coffee experience your guests won’t forget.</h4>
+            <h4>From the first pour to the final conversation, we design each setup to feel intentional, warm, and seamlessly integrated into your event.</h4>
+            <button>Bring the Third Bean to Your Event</button>
+            <h5>“Our only regret was that we didn’t book them longer—everyone kept coming back for another cup.”</h5>
+            <h5>— Client, Dallas–Fort Worth</h5>
+        </div>
+    </div>
+
+    <div class="container secondary" id="content">
+        <div class="imageWrap">
+            <button class="imgBtn">Book Event</button>
+        </div>  
+        <div class="centered">
+            <h1>Clear Pricing. Thoughtful Experiences.</h1>
+            <h4>Planning an event should feel intentional—not overwhelming. That’s why Third Bean offers transparent, straightforward pricing with no surprises. Our coffee experiences are built to be flexible, scalable, and tailored to the moment you’re creating.</h4>
+            <h4>Whether you’re hosting an intimate gathering of 30 or a large-scale event with hundreds of guests, we design each setup around your needs—from service time and menu selection to flow and presentation.</h4>
+            <h4>Our standard service includes unlimited hot and iced coffee, prepared fresh on-site by experienced baristas who understand both craft and hospitality.</h4>
+            <h4>Reach out for a quick, no-obligation quote, and let’s create a coffee experience that fits your event—beautifully and seamlessly.</h4>
+        </div>
+    </div>
+
+    <div class="container" id="footer">
+        <div class="footer desktop">
+            <h4>Third Bean</h4>
+            <h5 id="italic">There’s more in the cup than you think.</h5>
+            <h6 class="footer">Mobile coffee experiences for weddings, corporate events, and private gatherings across Dallas–Fort Worth. Thoughtfully roasted. Carefully served.</h6>
+        </div>
+        <div class="container">
+            <div class="column">
+                <h4>Explore</h4>
+                <button class="footer btn">Our Story</button>
+                <button class="footer btn">Menu</button>
+                <button class="footer btn">Services & Events</button>
+                <button class="footer btn">Pricing</button>
+                <button class="footer btn">FAQ</button>
+            </div>
+            <div class="column">
+                <h4>Get in Touch</h4>
+                <h5>4139 Centurion Way Addison, Tx</h5>
+                <h5>info@third-bean.com</h5>
+                <button class="footer btn" href="">Book Your Event</button>
+            </div>
+            <div class="column">
+                <h4>Legal / Utility</h4>
+                <button class="footer btn" href="">Privacy Policy</button>
+                <button class="footer btn" href="">Terms Of Service</button>
+            </div>
+        </div>
+    </div>
+    <script>
+        const toggle = document.querySelector('.menuToggle');
+        const nav = document.querySelector('.navbar');
+
+        toggle.addEventListener('click', () => {
+            nav.classList.toggle('open');
+            toggle.classList.toggle('active');
+        });
+        
+    </script>
+
 </body>
+
 </html>
